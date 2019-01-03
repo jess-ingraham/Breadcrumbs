@@ -1,0 +1,18 @@
+* A user can log into the site and see a dashboard of their recent transactions
+* each transaction has a type that can be selected from a predefined list or can be user defined ("other")
+	* maybe have sub-categories (ie food -> groceries/restaurant)
+* each transaction has a date of the transaction and the posted date
+
+
+* want each user to be able to see a trend of their monthly spending 
+* user can view spending my category or all spending over a certain time period
+
+* a user can add/delete/edit a transaction 
+
+* a user can put in a paycheck or recurring paydate to track income and asset accounts (investment accounts)
+* a user can track whether they consider it a necessity or not
+
+
+=== Future Goals ===
+* a user can set spending limits and alerts will be set when the limit is almost reached
+

@@ -1,0 +1,31 @@
+* food
+	* groceries
+	* restaurant
+	* fast food
+	* bar
+	* alcohol
+
+* travel
+	* uber/lyft
+	* subway/bus
+	* gas
+	* vehicle maintaince
+
+* clothes
+	* workout
+	* casual
+	* business
+	* shoes
+
+* necessaties
+	* personal toiletries
+	* cleaning products
+	* 
+
+* miscellaneous
+	* electronics
+	* household
+	* school/office supplies
+
+
+
