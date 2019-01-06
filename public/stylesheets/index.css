@@ -1,0 +1,115 @@
+/* RGB */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500");
+@import url("https://fonts.googleapis.com/css?family=Glegoo:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
+header {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-content: flex-start;
+  align-items: flex-start;
+  justify-content: stretch;
+}
+header div.top-header {
+  background-color: #47f9f0;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: space-around;
+}
+header div.top-header ul {
+  padding: 0.4% 3% 0.4% 0;
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: baseline;
+  justify-content: flex-end;
+}
+header div.top-header ul li {
+  margin: auto 2% auto 0;
+  font-size: 1em;
+  padding: 0.4% 1%;
+  display: inline-block;
+  color: #7a8c95;
+  font-weight: 700;
+  text-align: center;
+  font-family: "Glegoo", serif;
+}
+header div.top-header ul li.signup {
+  background-color: #7a8c95;
+  font-size: 1.4em;
+  color: #f4ebec;
+  border-radius: 2em;
+}
+header div.main-header {
+  height: 90%;
+  width: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/budget.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+header div.main-header h1.title {
+  font-size: 4vw;
+  padding: 2%;
+  border: 5px solid #47f9f0;
+}
+
+.content {
+  width: 90%;
+  margin: auto;
+  background-color: white;
+}
+.content .about {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-content: space-around;
+  align-items: space-around;
+  justify-content: space-around;
+}
+.content .about section {
+  margin: auto 1%;
+}
+.content .about section img {
+  position: relative;
+  top: 64px;
+  width: 30%;
+  margin: auto 8% auto auto;
+  display: block;
+  background-color: #47f9f0;
+  border-radius: 50%;
+}
+.content .about section .section-content {
+  width: 100%;
+  padding: 1%;
+  margin: auto;
+  background-color: #839791;
+}
+.content .about section .section-content h2 {
+  margin-left: 20%;
+  text-align: left;
+  font-family: "Glegoo", serif;
+  font-size: 1.6em;
+  color: #f4ebec;
+}
+.content .about section .section-content p {
+  padding: 2%;
+  font-size: 1em;
+  text-align: justify;
+}
+
+footer {
+  background-color: #fff;
+  padding-top: 10%;
+}
+
+/*# sourceMappingURL=index.css.map */

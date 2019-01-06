@@ -1,0 +1,110 @@
+/* RGB */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500");
+@import url("https://fonts.googleapis.com/css?family=Glegoo:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
+header {
+  width: 100%;
+  height: 10vh;
+  background-color: #7a8c95;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: flex-start;
+}
+header h1 {
+  font-size: 2.6em;
+}
+
+.content .welcome h2 {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-family: "Glegoo", serif;
+  font-size: 3.6em;
+  color: #839791;
+}
+.content .welcome h2 .cyan {
+  color: #47f9f0;
+}
+.content .welcome h4 {
+  text-align: center;
+  width: 100%;
+  margin: auto;
+  font-family: "Monserrat", sans-serif;
+  font-size: 1.4em;
+  color: #839791;
+}
+.content form {
+  width: 60%;
+  margin: 4% auto auto 5%;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  align-items: space-between;
+  justify-content: center;
+}
+.content form > div.input {
+  position: relative;
+  overflow: hidden;
+}
+.content form > div.input input {
+  width: 100%;
+  margin: 2% auto;
+  border-bottom: 4px solid #47f9f0;
+  font-size: 1.4em;
+  font-family: "Monserrat", sans-serif;
+  background: none;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+.content form > div.input input:valid {
+  background-color: white;
+}
+.content form > div.input input:valid + label {
+  background-color: #47f9f0;
+  font-size: 1em;
+  color: #7a8c95;
+  top: 50%;
+  bottom: 0;
+}
+.content form > div.input input:focus + label {
+  background-color: #47f9f0;
+  font-size: 1em;
+  color: #7a8c95;
+  top: 50%;
+  bottom: 0;
+}
+.content form > div.input label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  margin-top: 2%;
+  font-size: 1.4em;
+  font-family: "Monserrat", sans-serif;
+  color: #7a8c95;
+  transition: color 0.5s, background 0.5s, top 0.5s, left 0.5s, right 0.5s, bottom 0.5s;
+}
+.content form input[type=submit] {
+  background-color: #47f9f0;
+  border: none;
+  width: 20%;
+  margin: 5% auto 0;
+  padding: 2%;
+  font-size: 1.2em;
+  font-family: "Glegoo", serif;
+  border-radius: 20px;
+}
+.content form input[type=submit]:hover, .content form input[type=submit]:active {
+  cursor: pointer;
+}
+
+footer {
+  height: 10vh;
+}
+
+/*# sourceMappingURL=signup.css.map */

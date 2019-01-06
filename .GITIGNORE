@@ -1,2 +1,3 @@
 node_modules
-sass_files
+public/sass
+public/stylesheets/*.css.map

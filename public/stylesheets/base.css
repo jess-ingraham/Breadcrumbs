@@ -1,0 +1,67 @@
+/* RGB */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500");
+@import url("https://fonts.googleapis.com/css?family=Glegoo:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
+body {
+  width: 100%;
+  margin: 0;
+  box-sizing: border-box;
+  color: black;
+  font-size: 100%;
+  outline: transparent;
+  list-style: none;
+  background-color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+h1 {
+  color: #47f9f0;
+  font-family: "Poppins", sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+}
+ul li {
+  display: inline-block;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+p {
+  font-family: "Monserrat", sans-serif;
+  font-size: 1em;
+}
+
+header .icon {
+  width: 20%;
+  align-content: center;
+}
+header .icon img {
+  display: block;
+  width: 20%;
+  margin: auto 5% auto auto;
+}
+
+form input {
+  outline: none;
+  border: none;
+}
+form input:focus {
+  outline: none;
+  text-decoration: none;
+  border: none;
+}
+
+/*# sourceMappingURL=base.css.map */

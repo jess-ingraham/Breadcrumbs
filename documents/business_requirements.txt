@@ -16,3 +16,12 @@
 === Future Goals ===
 * a user can set spending limits and alerts will be set when the limit is almost reached
 
+
+possible names
+=================
+MoneyBuddy
+MoneyBud
+CashCollector
+$Collector
+BreadCumbs
+
