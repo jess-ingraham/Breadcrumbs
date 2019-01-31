@@ -12,14 +12,14 @@ For each transaction users will be able to:
 For incomes and paydays users will be able to:
 * add the date when the income...came in
 * add a reoccuring paydate for common pay periods
-** 15th and 30th of each month, every 2 weeks, etc
+  ** 15th and 30th of each month, every 2 weeks, etc
 
 For spending goals and tracking users will be able to:
 * add a limit to the amount they spend in a certain time frame, a certain category, or both
 * view graphs with information about how much they spent for
- ** a time frame
- ** a certain category
- ** necessities
+  ** a time frame
+  ** a certain category
+  ** necessities
 
 
 ### As of 1/31/2019
@@ -28,6 +28,9 @@ Layouts for the homepage, signup, and login pages are completed besides any text
 They can be viewed at the following
 
 [Home Page](https://jess-ingraham.github.io/Breadcrumbs/)
+
 [Sign Up](https://jess-ingraham.github.io/Breadcrumbs/signup.html)
+
 [Log In](https://jess-ingraham.github.io/Breadcrumbs/login.html)
+
 [User Dashboard](https://jess-ingraham.github.io/Breadcrumbs/dashboard.html) *This page in incomplete as of 1/31
