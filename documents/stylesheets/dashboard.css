@@ -1,0 +1,72 @@
+/* RGB */
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,500");
+@import url("https://fonts.googleapis.com/css?family=Glegoo:400,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500");
+header.logged-in div.user-greeting {
+  width: 40%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+header.logged-in div.user-greeting h4 {
+  color: #47f9f0;
+  display: inline-block;
+  width: auto;
+}
+header.logged-in div.user-greeting p {
+  display: inline-block;
+  width: auto;
+}
+
+.content {
+  width: 90%;
+  margin: auto;
+}
+.content .graph {
+  width: 100%;
+  margin: 2% auto;
+}
+.content .main-menu {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.content .main-menu .box {
+  width: 40%;
+  background-color: #7a8c95;
+  margin: 2% 4%;
+  padding: 0 2% 2%;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+.content .main-menu .box .icon {
+  width: 100%;
+  margin: 0 auto 1%;
+  position: relative;
+  top: -20px;
+}
+.content .main-menu .box .icon img {
+  display: block;
+  margin: auto;
+  padding: 4%;
+  background-color: #47f9f0;
+  border: none;
+  border-radius: 50%;
+  width: 30%;
+}
+.content .main-menu .box .caption .action {
+  font-size: 1.4em;
+}
+
+/*# sourceMappingURL=dashboard.css.map */

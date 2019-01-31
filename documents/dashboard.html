@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dashboard</title>
+        
+        <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+        <script src="javascripts/graph.js"></script>
+        
+        <link rel="stylesheet" type="text/css" href="stylesheets/base.css"/>
+        <link rel="stylesheet" type="text/css" href="stylesheets/dashboard.css"/>
+    
+    </head>
+    
+    <body>
+        
+        <header class="small-header logged-in" >
+            <div class="icon">
+                <a href='/'><img src="images/toaster-cyan.png"/></a>
+            </div>
+            <h1>
+                BreadCrumbs
+            </h1>
+            
+            <div class="user-greeting">
+                <h4>Hi FirstName!</h4>
+                <p><a href="/logout">Log Out</a></p>
+            
+            </div>
+        
+        </header>
+        
+        <div class="content">
+            <div id="main-monthly-graph" class="graph" ></div>
+            
+            
+            <div class="main-menu">
+                
+                <div class="box">
+                    
+                    <div class="icon">
+                        
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDQyIDQyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA0MiA0MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+Cjxwb2x5Z29uIHBvaW50cz0iNDIsMjAgMjIsMjAgMjIsMCAyMCwwIDIwLDIwIDAsMjAgMCwyMiAyMCwyMiAyMCw0MiAyMiw0MiAyMiwyMiA0MiwyMiAiIGZpbGw9IiMwMDAwMDAiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg==" />
+                    </div>
+                    
+                    <div class="caption">
+                        <h3>
+                            <span class="action cyan">Add</span><br />a new transaction
+                        </h3>
+                
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="box">
+                    
+                    <div class="icon">
+                        
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHhtbG5zOnhsaW5rPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5L3hsaW5rIiB2ZXJzaW9uPSIxLjEiIHZpZXdCb3g9IjAgMCAxMjkgMTI5IiBlbmFibGUtYmFja2dyb3VuZD0ibmV3IDAgMCAxMjkgMTI5IiB3aWR0aD0iMTI4cHgiIGhlaWdodD0iMTI4cHgiPgogIDxnPgogICAgPGc+CiAgICAgIDxwYXRoIGQ9Im0xMTkuMiwxMTQuM2gtMTA5LjRjLTIuMywwLTQuMSwxLjktNC4xLDQuMXMxLjksNC4xIDQuMSw0LjFoMTA5LjVjMi4zLDAgNC4xLTEuOSA0LjEtNC4xcy0xLjktNC4xLTQuMi00LjF6IiBmaWxsPSIjMDAwMDAwIi8+CiAgICAgIDxwYXRoIGQ9Im01LjcsNzhsLS4xLDE5LjVjMCwxLjEgMC40LDIuMiAxLjIsMyAwLjgsMC44IDEuOCwxLjIgMi45LDEuMmwxOS40LS4xYzEuMSwwIDIuMS0wLjQgMi45LTEuMmw2Ny02N2MxLjYtMS42IDEuNi00LjIgMC01LjlsLTE5LjItMTkuNGMtMS42LTEuNi00LjItMS42LTUuOS0xLjc3NjM2ZS0xNWwtMTMuNCwxMy41LTUzLjYsNTMuNWMtMC43LDAuOC0xLjIsMS44LTEuMiwyLjl6bTcxLjItNjEuMWwxMy41LDEzLjUtNy42LDcuNi0xMy41LTEzLjUgNy42LTcuNnptLTYyLjksNjIuOWw0OS40LTQ5LjQgMTMuNSwxMy41LTQ5LjQsNDkuMy0xMy42LC4xIC4xLTEzLjV6IiBmaWxsPSIjMDAwMDAwIi8+CiAgICA8L2c+CiAgPC9nPgo8L3N2Zz4K" />
+                    </div>
+                    
+                    <div class="caption">
+                        <h3>
+                            <span class="action cyan">Edit</span><br/>a past transaction
+                        </h3>
+                
+                    </div>
+                    
+                </div>
+                
+                
+                <div class="box">
+                    
+                    <div class="icon">
+                        
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+CjxnPgoJPHBhdGggZD0iTTI2LDBDMTEuNjY0LDAsMCwxMS42NjMsMCwyNnMxMS42NjQsMjYsMjYsMjZzMjYtMTEuNjYzLDI2LTI2UzQwLjMzNiwwLDI2LDB6IE0yNiw1MEMxMi43NjcsNTAsMiwzOS4yMzMsMiwyNiAgIFMxMi43NjcsMiwyNiwyczI0LDEwLjc2NywyNCwyNFMzOS4yMzMsNTAsMjYsNTB6IiBmaWxsPSIjNDdmOWYwIi8+Cgk8cGF0aCBkPSJNMzguNSwyNUgyN1YxNGMwLTAuNTUzLTAuNDQ4LTEtMS0xcy0xLDAuNDQ3LTEsMXYxMUgxMy41Yy0wLjU1MiwwLTEsMC40NDctMSwxczAuNDQ4LDEsMSwxSDI1djEyYzAsMC41NTMsMC40NDgsMSwxLDEgICBzMS0wLjQ0NywxLTFWMjdoMTEuNWMwLjU1MiwwLDEtMC40NDcsMS0xUzM5LjA1MiwyNSwzOC41LDI1eiIgZmlsbD0iIzQ3ZjlmMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                    </div>
+                    
+                    <div class="caption">
+                        <h3>
+                            Add a new transaction
+                        </h3>
+                
+                    </div>
+                    
+                </div>
+                
+                
+                
+                <div class="box">
+                    
+                    <div class="icon">
+                        
+                        <img src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iQ2FwYV8xIiB4PSIwcHgiIHk9IjBweCIgdmlld0JveD0iMCAwIDUyIDUyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MiA1MjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSIxMjhweCIgaGVpZ2h0PSIxMjhweCI+CjxnPgoJPHBhdGggZD0iTTI2LDBDMTEuNjY0LDAsMCwxMS42NjMsMCwyNnMxMS42NjQsMjYsMjYsMjZzMjYtMTEuNjYzLDI2LTI2UzQwLjMzNiwwLDI2LDB6IE0yNiw1MEMxMi43NjcsNTAsMiwzOS4yMzMsMiwyNiAgIFMxMi43NjcsMiwyNiwyczI0LDEwLjc2NywyNCwyNFMzOS4yMzMsNTAsMjYsNTB6IiBmaWxsPSIjNDdmOWYwIi8+Cgk8cGF0aCBkPSJNMzguNSwyNUgyN1YxNGMwLTAuNTUzLTAuNDQ4LTEtMS0xcy0xLDAuNDQ3LTEsMXYxMUgxMy41Yy0wLjU1MiwwLTEsMC40NDctMSwxczAuNDQ4LDEsMSwxSDI1djEyYzAsMC41NTMsMC40NDgsMSwxLDEgICBzMS0wLjQ0NywxLTFWMjdoMTEuNWMwLjU1MiwwLDEtMC40NDcsMS0xUzM5LjA1MiwyNSwzOC41LDI1eiIgZmlsbD0iIzQ3ZjlmMCIvPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+CjxnPgo8L2c+Cjwvc3ZnPgo=" />
+                    </div>
+                    
+                    <div class="caption">
+                        <h3>
+                            Add a new transaction
+                        </h3>
+                
+                    </div>
+                    
+                </div>
+                    
+                
+                
+                
+            
+            </div>
+        
+        </div>
+        
+    
+    </body>
+
+
+</html>
