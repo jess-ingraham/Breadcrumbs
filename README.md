@@ -33,4 +33,4 @@ They can be viewed at the following
 
 [Log In](https://jess-ingraham.github.io/Breadcrumbs/login.html)
 
-[User Dashboard](https://jess-ingraham.github.io/Breadcrumbs/dashboard.html) ***This page in incomplete as of 1/31
+[User Dashboard](https://jess-ingraham.github.io/Breadcrumbs/dashboard.html) ***This page in incomplete as of 1/31***
